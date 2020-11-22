@@ -76,7 +76,7 @@ print("model ends")
 Pred = model.predict(X_test)
 pickle.dump(model, open("RandomForestRegressor.sav","wb"))
 
-model = pickle.load(open("RandomForestRegressor.sav","rd"))
+model = pickle.load(open("RandomForestRegressor.sav","rb"))
 '''
 Pred1 = pd.DataFrame()
 Pred1.insert(0,"sales",Pred,True)
